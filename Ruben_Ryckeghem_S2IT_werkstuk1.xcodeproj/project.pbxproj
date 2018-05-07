@@ -15,6 +15,7 @@
 		3865BCB920A086E800DCC073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3865BCB720A086E800DCC073 /* LaunchScreen.storyboard */; };
 		3865BCC420A086E900DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865BCC320A086E900DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1Tests.swift */; };
 		3865BCCF20A086E900DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865BCCE20A086E900DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1UITests.swift */; };
+		3865BCDD20A0910700DCC073 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865BCDC20A0910700DCC073 /* item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3865BCCA20A086E900DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ruben_Ryckeghem_S2IT_werkstuk1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3865BCCE20A086E900DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ruben_Ryckeghem_S2IT_werkstuk1UITests.swift; sourceTree = "<group>"; };
 		3865BCD020A086E900DCC073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3865BCDC20A0910700DCC073 /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				3865BCAB20A086E800DCC073 /* AppDelegate.swift */,
 				3865BCAD20A086E800DCC073 /* ViewController.swift */,
+				3865BCDC20A0910700DCC073 /* item.swift */,
 				3865BCAF20A086E800DCC073 /* Main.storyboard */,
 				3865BCB520A086E800DCC073 /* Assets.xcassets */,
 				3865BCB720A086E800DCC073 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3865BCDD20A0910700DCC073 /* item.swift in Sources */,
 				3865BCAE20A086E800DCC073 /* ViewController.swift in Sources */,
 				3865BCAC20A086E800DCC073 /* AppDelegate.swift in Sources */,
 				3865BCB420A086E800DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1.xcdatamodeld in Sources */,
