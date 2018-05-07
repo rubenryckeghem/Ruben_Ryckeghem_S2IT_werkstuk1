@@ -16,6 +16,8 @@
 		3865BCC420A086E900DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865BCC320A086E900DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1Tests.swift */; };
 		3865BCCF20A086E900DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865BCCE20A086E900DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1UITests.swift */; };
 		3865BCDD20A0910700DCC073 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865BCDC20A0910700DCC073 /* item.swift */; };
+		3865BCE320A091E400DCC073 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865BCE220A091E400DCC073 /* ItemViewController.swift */; };
+		3865BCE520A0921500DCC073 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865BCE420A0921500DCC073 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3865BCCE20A086E900DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ruben_Ryckeghem_S2IT_werkstuk1UITests.swift; sourceTree = "<group>"; };
 		3865BCD020A086E900DCC073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3865BCDC20A0910700DCC073 /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
+		3865BCE220A091E400DCC073 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		3865BCE420A0921500DCC073 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				3865BCB720A086E800DCC073 /* LaunchScreen.storyboard */,
 				3865BCBA20A086E800DCC073 /* Info.plist */,
 				3865BCB220A086E800DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1.xcdatamodeld */,
+				3865BCE220A091E400DCC073 /* ItemViewController.swift */,
+				3865BCE420A0921500DCC073 /* TableViewController.swift */,
 			);
 			path = Ruben_Ryckeghem_S2IT_werkstuk1;
 			sourceTree = "<group>";
@@ -266,7 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3865BCDD20A0910700DCC073 /* item.swift in Sources */,
+				3865BCE520A0921500DCC073 /* TableViewController.swift in Sources */,
 				3865BCAE20A086E800DCC073 /* ViewController.swift in Sources */,
+				3865BCE320A091E400DCC073 /* ItemViewController.swift in Sources */,
 				3865BCAC20A086E800DCC073 /* AppDelegate.swift in Sources */,
 				3865BCB420A086E800DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1.xcdatamodeld in Sources */,
 			);
