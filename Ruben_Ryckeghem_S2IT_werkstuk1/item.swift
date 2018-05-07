@@ -10,17 +10,29 @@ import Foundation
 class Item {
     var voornaam:String
     var achternaam:String
+    var straat:String
+    var huisnummer:String
+    var postcode:String
+    var gemeente:String
     var image:String
     
     init() {
         voornaam = ""
         achternaam = ""
+        straat = ""
+        huisnummer = ""
+        gemeente = ""
+        postcode = ""
         image = ""
     }
     
-    init(voornaam: String,achternaam:String, image:String){
+    init(voornaam: String,achternaam:String,straat:String,huisnummer:String,gemeente:String,postcode:String, image:String){
         self.voornaam = voornaam
         self.achternaam = achternaam
+        self.straat = straat
+        self.gemeente = gemeente
+        self.huisnummer = huisnummer
+        self.postcode = postcode
         self.image = image
     }
 }

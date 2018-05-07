@@ -15,8 +15,8 @@ class TableViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let item1 = Item(voornaam: "Ruben", achternaam:"Ryckeghem",image: "ruben")
-        let item2 = Item(voornaam: "David",achternaam:"Heremans",image: "david")
+        let item1 = Item(voornaam: "Ruben", achternaam:"Ryckeghem",straat:"Bombardonstraat",huisnummer:"221",gemeente:"Liedekerke",postcode:"1770",image: "ruben")
+        let item2 = Item(voornaam: "David",achternaam:"Heremans",straat:"noobstraat",huisnummer:"69",gemeente:"Leuven",postcode:"0000",image: "david")
         
         items.append(item1)
         items.append(item2)

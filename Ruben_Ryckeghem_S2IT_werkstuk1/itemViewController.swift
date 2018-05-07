@@ -13,8 +13,11 @@ class ItemViewController: UIViewController {
     
     
     @IBOutlet weak var myLabel: UILabel!
-    
     @IBOutlet weak var myAn: UILabel!
+    @IBOutlet weak var myStraat: UILabel!
+    @IBOutlet weak var myHN: UILabel!
+    @IBOutlet weak var myGemeente: UILabel!
+    @IBOutlet weak var myPostcode: UILabel!
     @IBOutlet weak var myImageView: UIImageView!
     
     @IBAction func transformImage(_ sender: UIPinchGestureRecognizer) {
@@ -30,6 +33,10 @@ class ItemViewController: UIViewController {
         
         self.myLabel.text = item.voornaam
         self.myAn.text = item.achternaam
+        self.myStraat.text = item.straat
+        self.myGemeente.text = item.gemeente
+        self.myHN.text = item.huisnummer
+        self.myPostcode.text = item.postcode
         self.myImageView.image = UIImage(named: item.image)
     }
     
