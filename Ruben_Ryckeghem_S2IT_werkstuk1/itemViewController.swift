@@ -14,6 +14,7 @@ class ItemViewController: UIViewController {
     
     @IBOutlet weak var myLabel: UILabel!
     
+    @IBOutlet weak var myAn: UILabel!
     @IBOutlet weak var myImageView: UIImageView!
     
     @IBAction func transformImage(_ sender: UIPinchGestureRecognizer) {
@@ -27,7 +28,8 @@ class ItemViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.myLabel.text = item.title
+        self.myLabel.text = item.voornaam
+        self.myAn.text = item.achternaam
         self.myImageView.image = UIImage(named: item.image)
     }
     

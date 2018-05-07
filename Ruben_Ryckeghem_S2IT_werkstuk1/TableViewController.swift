@@ -15,11 +15,11 @@ class TableViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let item1 = Item(title: "Ruben", image: "ruben")
-        
+        let item1 = Item(voornaam: "Ruben", achternaam:"Ryckeghem",image: "ruben")
+        let item2 = Item(voornaam: "David",achternaam:"Heremans",image: "david")
         
         items.append(item1)
-        
+        items.append(item2)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -51,7 +51,7 @@ class TableViewController: UITableViewController{
         
         // Configure the cell...
         
-        cell.textLabel?.text = items[indexPath.row].title
+        cell.textLabel?.text = items[indexPath.row].voornaam
         cell.imageView?.image = UIImage(named: items[indexPath.row].image)
         
         

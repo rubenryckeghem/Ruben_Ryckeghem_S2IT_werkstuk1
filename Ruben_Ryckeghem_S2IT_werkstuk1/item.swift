@@ -8,16 +8,19 @@
 
 import Foundation
 class Item {
-    var title:String
+    var voornaam:String
+    var achternaam:String
     var image:String
     
     init() {
-        title = ""
+        voornaam = ""
+        achternaam = ""
         image = ""
     }
     
-    init(title: String, image:String){
-        self.title = title
+    init(voornaam: String,achternaam:String, image:String){
+        self.voornaam = voornaam
+        self.achternaam = achternaam
         self.image = image
     }
 }
