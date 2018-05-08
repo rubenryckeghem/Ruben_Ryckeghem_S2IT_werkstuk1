@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3824611220A0D70600B149AF /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3824611120A0D70600B149AF /* MyAnnotation.swift */; };
+		3824611620A0DC6700B149AF /* ViewControllerAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3824611520A0DC6700B149AF /* ViewControllerAnnotations.swift */; };
 		3865BCAC20A086E800DCC073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865BCAB20A086E800DCC073 /* AppDelegate.swift */; };
 		3865BCAE20A086E800DCC073 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865BCAD20A086E800DCC073 /* ViewController.swift */; };
 		3865BCB120A086E800DCC073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3865BCAF20A086E800DCC073 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3824611120A0D70600B149AF /* MyAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
+		3824611520A0DC6700B149AF /* ViewControllerAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAnnotations.swift; sourceTree = "<group>"; };
 		3865BCA820A086E800DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ruben_Ryckeghem_S2IT_werkstuk1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3865BCAB20A086E800DCC073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3865BCAD20A086E800DCC073 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 		3865BCAA20A086E800DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1 */ = {
 			isa = PBXGroup;
 			children = (
+				3824611520A0DC6700B149AF /* ViewControllerAnnotations.swift */,
 				3865BCAB20A086E800DCC073 /* AppDelegate.swift */,
 				3865BCAD20A086E800DCC073 /* ViewController.swift */,
 				3865BCDC20A0910700DCC073 /* item.swift */,
@@ -114,6 +119,7 @@
 				3865BCBA20A086E800DCC073 /* Info.plist */,
 				3865BCB220A086E800DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1.xcdatamodeld */,
 				3865BCE220A091E400DCC073 /* ItemViewController.swift */,
+				3824611120A0D70600B149AF /* MyAnnotation.swift */,
 				3865BCE420A0921500DCC073 /* TableViewController.swift */,
 			);
 			path = Ruben_Ryckeghem_S2IT_werkstuk1;
@@ -271,12 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3824611220A0D70600B149AF /* MyAnnotation.swift in Sources */,
 				3865BCDD20A0910700DCC073 /* item.swift in Sources */,
 				3865BCE520A0921500DCC073 /* TableViewController.swift in Sources */,
 				3865BCAE20A086E800DCC073 /* ViewController.swift in Sources */,
 				3865BCE320A091E400DCC073 /* ItemViewController.swift in Sources */,
 				3865BCAC20A086E800DCC073 /* AppDelegate.swift in Sources */,
 				3865BCB420A086E800DCC073 /* Ruben_Ryckeghem_S2IT_werkstuk1.xcdatamodeld in Sources */,
+				3824611620A0DC6700B149AF /* ViewControllerAnnotations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

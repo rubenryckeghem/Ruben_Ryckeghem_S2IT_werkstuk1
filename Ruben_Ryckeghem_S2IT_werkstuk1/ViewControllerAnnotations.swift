@@ -1,59 +1,42 @@
 //
-//  ItemViewController.swift
+//  ViewControllerAnnotations.swift
 //  Ruben_Ryckeghem_S2IT_werkstuk1
 //
 //  Created by Ruben Ryckeghem on 7/05/18.
 //  Copyright © 2018 Ruben Ryckeghem. All rights reserved.
 //
 
-
 import UIKit
 import CoreLocation
 import MapKit
 
-class ItemViewController: UIViewController, MKMapViewDelegate {
+class ViewControllerAnnotations: UIViewController, MKMapViewDelegate {
+    
     var locationLongPress = CLLocationCoordinate2D()
-    var item = Item()
     
     @IBOutlet weak var myMapView: MKMapView!
-    
-    @IBOutlet weak var myLabel: UILabel!
-    @IBOutlet weak var myAn: UILabel!
-    @IBOutlet weak var myStraat: UILabel!
-    @IBOutlet weak var myHN: UILabel!
-    @IBOutlet weak var myGemeente: UILabel!
-    @IBOutlet weak var myPostcode: UILabel!
-    @IBOutlet weak var myImageView: UIImageView!
-    
-    @IBAction func transformImage(_ sender: UIPinchGestureRecognizer) {
-        self.myImageView.transform =  CGAffineTransform(scaleX: sender.scale, y: sender.scale)
-        
-        
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        self.myLabel.text = item.voornaam
-        self.myAn.text = item.achternaam
-        self.myStraat.text = item.straat
-        self.myGemeente.text = item.gemeente
-        self.myHN.text = item.huisnummer
-        self.myPostcode.text = item.postcode
-        self.myImageView.image = UIImage(named: item.image)
+        // Do any additional setup after loading the view.
         
-        let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude:item.latitude, longitude:item.longitude)
+        // voorbeeld annotation, eentje toevoegen voor we beginnen
+        
+        let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 50.850890, longitude: 4.347503)
         
         
-        let annotation:MyAnnotation = MyAnnotation(coordinate: coordinate, title: "Hier woont "+item.voornaam)
+        let annotation:MyAnnotation = MyAnnotation(coordinate: coordinate, title: "De Monk")
         
         self.myMapView.addAnnotation(annotation)
         self.myMapView.selectAnnotation(annotation, animated: true)
     }
+    
+    
+    
     @IBAction func longPressAction(_ sender: UILongPressGestureRecognizer) {
         showAlertWithTextfield()
         
-        // we leggen de coordinaten vast voor later gebruik
+        
         let point = sender.location(in: self.myMapView)
         self.locationLongPress = self.myMapView.convert(point, toCoordinateFrom:self.myMapView)
         
@@ -89,10 +72,15 @@ class ItemViewController: UIViewController, MKMapViewDelegate {
         
         mapView.setRegion(region, animated: true)
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
     
 }
+
