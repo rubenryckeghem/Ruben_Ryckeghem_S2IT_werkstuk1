@@ -17,6 +17,7 @@ class Item {
     var image:String
     var latitude:Double
     var longitude:Double
+    var telefoonnummer:String
     
     init() {
         voornaam = ""
@@ -28,9 +29,10 @@ class Item {
         image = ""
         latitude = 0
         longitude = 0
+        telefoonnummer = ""
     }
     
-    init(voornaam: String,achternaam:String,straat:String,huisnummer:String,gemeente:String,postcode:String, image:String, latitude:Double, longitude:Double){
+    init(voornaam: String,achternaam:String,straat:String,huisnummer:String,gemeente:String,postcode:String, image:String, latitude:Double, longitude:Double, telefoonnummer:String){
         self.voornaam = voornaam
         self.achternaam = achternaam
         self.straat = straat
@@ -40,5 +42,6 @@ class Item {
         self.image = image
         self.longitude = longitude
         self.latitude = latitude
+        self.telefoonnummer = telefoonnummer
     }
 }

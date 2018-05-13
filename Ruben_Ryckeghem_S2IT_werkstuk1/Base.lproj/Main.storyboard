@@ -63,12 +63,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0LI-wk-uhh">
-                                <rect key="frame" x="0.0" y="256" width="375" height="411"/>
+                                <rect key="frame" x="0.0" y="289" width="375" height="378"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Mt-Ne-sYc">
+                                <rect key="frame" x="16" y="250" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NFa-qE-BhF" secondAttribute="trailing" constant="3" id="2rl-KS-lfl"/>
+                            <constraint firstItem="7Mt-Ne-sYc" firstAttribute="top" secondItem="ZFF-MP-ULH" secondAttribute="bottom" constant="14" id="47b-N3-9sV"/>
                             <constraint firstItem="vto-7N-T1Y" firstAttribute="leading" secondItem="w0d-XV-CMz" secondAttribute="trailing" constant="16" id="4Sd-uF-REV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0LI-wk-uhh" secondAttribute="trailing" id="AxV-P3-kev"/>
                             <constraint firstItem="NFa-qE-BhF" firstAttribute="leading" secondItem="SYs-vv-txa" secondAttribute="leading" id="DbO-IR-NRp"/>
@@ -81,10 +88,11 @@
                             <constraint firstItem="w0d-XV-CMz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="TZD-Et-KC1"/>
                             <constraint firstItem="NFa-qE-BhF" firstAttribute="trailing" secondItem="e7X-O3-3Q9" secondAttribute="trailing" id="Tj8-M0-f77"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0LI-wk-uhh" secondAttribute="bottom" id="UwW-Wc-kyo"/>
-                            <constraint firstItem="0LI-wk-uhh" firstAttribute="top" secondItem="e7X-O3-3Q9" secondAttribute="bottom" constant="20" id="Vsj-lg-Sbv"/>
+                            <constraint firstItem="0LI-wk-uhh" firstAttribute="top" secondItem="e7X-O3-3Q9" secondAttribute="bottom" constant="53" id="Vsj-lg-Sbv"/>
                             <constraint firstItem="ZFF-MP-ULH" firstAttribute="top" secondItem="w0d-XV-CMz" secondAttribute="bottom" constant="18" id="eo1-fQ-ayC"/>
                             <constraint firstItem="vto-7N-T1Y" firstAttribute="trailing" secondItem="O1W-up-Kr1" secondAttribute="trailing" id="iMG-Wg-0Xz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SYs-vv-txa" secondAttribute="trailing" constant="160" id="iSX-ho-y6z"/>
+                            <constraint firstItem="7Mt-Ne-sYc" firstAttribute="leading" secondItem="ZFF-MP-ULH" secondAttribute="leading" id="m5v-kn-Mxa"/>
                             <constraint firstItem="SYs-vv-txa" firstAttribute="leading" secondItem="e7X-O3-3Q9" secondAttribute="leading" id="qAm-eX-81y"/>
                             <constraint firstItem="vto-7N-T1Y" firstAttribute="leading" secondItem="O1W-up-Kr1" secondAttribute="leading" id="qZY-GO-80n"/>
                             <constraint firstItem="w0d-XV-CMz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tbJ-ab-LDX"/>
@@ -104,6 +112,7 @@
                         <outlet property="myMapView" destination="0LI-wk-uhh" id="vLu-3E-Xpu"/>
                         <outlet property="myPostcode" destination="ZFF-MP-ULH" id="shq-9X-rw8"/>
                         <outlet property="myStraat" destination="NFa-qE-BhF" id="j1l-1E-rCb"/>
+                        <outlet property="myTeleNr" destination="7Mt-Ne-sYc" id="Epo-bx-ZDs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

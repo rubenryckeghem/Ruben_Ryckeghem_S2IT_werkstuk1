@@ -15,13 +15,15 @@ class TableViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let item1 = Item(voornaam: "Ruben", achternaam:"Ryckeghem",straat:"Bombardonstraat",huisnummer:"221",gemeente:"Liedekerke",postcode:"1770",image: "ruben",latitude:50.863517, longitude:4.097565)
-        let item2 = Item(voornaam: "David",achternaam:"Heremans",straat:"Marguerite Lefevrelaan",huisnummer:"7",gemeente:"Wilsele",postcode:"3012",image: "david",latitude:50.890284, longitude:4.703320)
-        let item3 = Item(voornaam: "Jergo",achternaam:"Dion",straat:"Pastoriestraat",huisnummer:"62",gemeente:"Kapelle-op-den-Bos",postcode:"1880",image: "jergo",latitude:51.015388, longitude:4.357503)
+        let item1 = Item(voornaam: "Ruben", achternaam:"Ryckeghem",straat:"Bombardonstraat",huisnummer:"221",gemeente:"Liedekerke",postcode:"1770",image: "ruben",latitude:50.863517, longitude:4.097565, telefoonnummer:"0472821558")
+        let item2 = Item(voornaam: "David",achternaam:"Heremans",straat:"Marguerite Lefevrelaan",huisnummer:"7",gemeente:"Wilsele",postcode:"3012",image: "david",latitude:50.890284, longitude:4.703320, telefoonnummer:"0499414485")
+        let item3 = Item(voornaam: "Jergo",achternaam:"Dion",straat:"Pastoriestraat",huisnummer:"62",gemeente:"Kapelle-op-den-Bos",postcode:"1880",image: "jergo",latitude:51.015388, longitude:4.357503, telefoonnummer:"0477170469")
+        let item4 = Item(voornaam: "Gilbert",achternaam:"Moens",straat:"Buyckstraat",huisnummer:"22",gemeente:"Anzegem",postcode:"8570",image: "gilbert",latitude:50.834474, longitude:3.475550, telefoonnummer:"0477889900")
         
         items.append(item1)
         items.append(item2)
         items.append(item3)
+        items.append(item4)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
